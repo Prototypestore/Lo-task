@@ -343,6 +343,10 @@ SECTION
   padding:2rem 1rem;
 }
 
+.container h2{
+  text-align: center;
+}
+
 /* GRID + CARDS (L1 FIXED) */
 .grid {
   display: grid;
