@@ -86,8 +86,13 @@ HAMBURGER BUTTON (MOBILE)
   background:white;
   padding:1rem;
   border-radius:10px;
+  transition: 0.25s ease;
 }
 
+/* 🔥 ADD THIS */
+.nav.open{
+  display:flex;
+}
 .nav a{
   text-decoration:none;
   color:#333;
