@@ -115,9 +115,7 @@ HAMBURGER BUTTON (MOBILE)
 }
 
 .highlight{
-  border:2px solid #c9a86a;
-  border-radius:20px;
-  padding:0 6px;
+  display: none;
 }
 
 .hero-text p{
@@ -217,6 +215,12 @@ footer{
     flex:1;
     margin-top:0;
   }
+
+  .highlight{
+  border:2px solid #c9a86a;
+  border-radius:20px;
+  padding:0 6px;
+}
 
   .feature{
     display:flex;
