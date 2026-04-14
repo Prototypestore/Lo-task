@@ -39,17 +39,16 @@ navLinks.forEach(link => {
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-  if (!nav.classList.contains("open")) return;
-
   const currentScroll = window.scrollY;
-  const links = nav; // since you don’t have nav ul
+
+  const navLinksContainer = nav; // keeping your structure
 
   if (currentScroll > lastScroll) {
-    links.style.opacity = "0.4";
-    links.style.transform = "translateY(-10px)";
+    navLinksContainer.style.opacity = "0.6";
+    navLinksContainer.style.transform = "translateY(-8px)";
   } else {
-    links.style.opacity = "1";
-    links.style.transform = "translateY(0px)";
+    navLinksContainer.style.opacity = "1";
+    navLinksContainer.style.transform = "translateY(0px)";
   }
 
   lastScroll = currentScroll;
