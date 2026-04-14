@@ -180,6 +180,14 @@ HAMBURGER BUTTON (MOBILE)
   padding:2rem 1rem;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
 /* DESKTOP */
 @media(min-width:768px){
 
@@ -188,6 +196,7 @@ HAMBURGER BUTTON (MOBILE)
     position:static;
     flex-direction:row;
     background:none;
+    border-top: 1px solid rgba(0,0,0,0.1);
   }
 
   .menu-toggle{
