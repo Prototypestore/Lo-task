@@ -179,6 +179,23 @@ HAMBURGER BUTTON (MOBILE)
   padding:2rem 1rem;
 }
 
+/* REFLECTION STYLING */
+.section {
+  max-width: 800px; /* keeps text from stretching too wide */
+  margin: 0 auto;   /* centers it */
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.section p {
+  margin-bottom: 1.2rem;  /* space between paragraphs */
+  line-height: 1.7;       /* improves readability */
+  color: #444;            /* softer than pure black */
+}
+
 footer{
   display: flex;
   justify-content: center;
@@ -231,5 +248,13 @@ footer{
   .feature-image,
   .feature-text{
     flex:1;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section p {
+    font-size: 1.05rem;
   }
 }
