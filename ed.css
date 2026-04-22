@@ -111,10 +111,12 @@ HAMBURGER BUTTON (MOBILE)
   margin: 20px 0;
 }
 
-.video-container video {
+.video-container iframe {
   width: 80%;
   max-width: 700px;
+  height: 400px;
   border-radius: 8px;
+  border: none;
 }
 
 /* SECTION */
