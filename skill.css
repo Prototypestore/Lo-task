@@ -1,0 +1,169 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, sans-serif;
+  background:#f7f4ef;
+  color:#1a1a1a;
+  line-height:1.6;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.logo{
+  font-weight:600;
+}
+
+/* =========================
+HAMBURGER BUTTON (MOBILE)
+========================= */
+.menu-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+
+  /* mobile: fixed on right */
+  position: static;
+  top: 24px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger path{
+  stroke:#000;
+  stroke-width:1.6;
+  stroke-linecap:round;
+  transform-origin:center;
+  transition: transform 0.35s ease, opacity 0.25s ease, stroke 0.25s ease;
+}
+
+/* Hamburger → X animation */
+.menu-btn.open .hamburger path:nth-child(1){
+  transform: translateY(5px) rotate(45deg);
+  transform-origin: center; 
+  transform-box: fill-box;
+  stroke:#000000;
+}
+
+.menu-btn.open .hamburger path:nth-child(2){
+  opacity:0;
+}
+
+.menu-btn.open .hamburger path:nth-child(3){
+  transform: translateY(-5px) rotate(-45deg);
+  transform-origin: center; 
+  transform-box: fill-box;
+  stroke:#000000;
+}
+
+.menu-btn.open .hamburger{
+  transform: scale(1.05);
+  transition: transform 0.35s ease;
+}
+
+.nav{
+  display:none;
+  flex-direction:column;
+  gap:1rem;
+  position:absolute;
+  top:60px;
+  right:20px;
+  background:white;
+  padding:1rem;
+  border-radius:10px;
+  transition: 0.25s ease;
+}
+
+/* 🔥 ADD THIS */
+.nav.open{
+  display:flex;
+}
+.nav a{
+  text-decoration:none;
+  color:#333;
+}
+
+.menu-toggle{
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+
+  .nav{
+    display:flex !important;
+    position:static;
+    flex-direction:row;
+    background:none;
+  }
+
+  .menu-toggle{
+    display:none;
+  }
+}
