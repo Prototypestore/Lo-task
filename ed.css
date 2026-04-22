@@ -104,6 +104,19 @@ HAMBURGER BUTTON (MOBILE)
   cursor:pointer;
 }
 
+/* VIDEO */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
 /* SECTION */
 .section {
   padding: 2rem 1rem;
