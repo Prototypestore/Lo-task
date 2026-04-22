@@ -104,43 +104,6 @@ HAMBURGER BUTTON (MOBILE)
   cursor:pointer;
 }
 
-/* HERO */
-.hero{
-  padding:2rem 1rem;
-}
-
-.hero-text h1{
-  font-size:2rem;
-  margin-bottom:1rem;
-}
-
-.highlight{
-  display: none;
-}
-
-.hero-text p{
-  margin-bottom:1rem;
-  color:#666;
-}
-
-.btn{
-  background:#c9a86a;
-  color:white;
-  border:none;
-  padding:0.7rem 1.2rem;
-  cursor:pointer;
-  border-radius:6px;
-}
-
-.hero-image{
-  margin-top:2rem;
-}
-
-.hero-image img{
-  width:100%;
-  border-radius:30px;
-}
-
 /* SECTION */
 .section {
   padding: 2rem 1rem;
